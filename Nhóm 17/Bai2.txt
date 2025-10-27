@@ -1,0 +1,18 @@
+Bài 2:
+a) Theo thuật toán đệ quy được đề xuất ta có:
+    - T(n) = T(n - 2) + 2
+           = T(n - 4) + 2 + 2 (*)
+           = T(n - k) + k
+            ....
+            Nếu n lẻ: 
+                (*) = T(1) + n - 1 = n + 1
+            Nếu n chẵn
+                (*) = T(0) + n = n
+    --> Độ phức tạp của thuật toán là O(n)
+b)  Phân tích tính tối ưu của thuật toán:   
+- Đầu tiên ta nhận thấy rằng với T(k) và k bất kỳ ta có thể dễ dàng tự tìm được công thức tổng quát 
+-  T(k) = k + 1 nếu k lẻ và T(k) = k nếu k chẵn --> ta ko nên dùng thuật toán đệ quy với chi phí O(n)
+c) Như đã phân tích ở câu a
+-   Thuật toán tối ưu nhất chính là ta chỉ cần tìm trước công thức tính tổng quát cho T(k) với k bất kỳ mà ko nên dùng đệ quy
+-   Ở bài toàn này nếu ta muốn nướng k(lẻ) chiếc bánh thì ta cần (Vì ta cần k - 1 phút để nướng hết (k - 1) chiếc bánh đầu tiên theo từng cặp và cần thêm 2 phút để nướng chiếc bánh cuối cùng)
+-   Còn trường hợp k chẵn thì ta chỉ cần đúng k phút (ta chỉ cần nướng từng cặp bánh cho đến khi hết bánh)
