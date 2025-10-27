@@ -13,4 +13,5 @@ Với mỗi subtask :
 * Cần trình bày rõ ràng, nội dung ngắn gọn dễ hiểu. 
 Điểm wecode : 70%
 Điểm báo cáo: 30%
-
+Link Wecode
+https://khmt.uit.edu.vn/wecode25/cs11x/assignment/8/0
